@@ -1,0 +1,40 @@
+{
+  "name": "daenen-next",
+  "version": "1.0.0",
+  "description": "The webpage of daenen4.de powered by next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luhmann/daenen-next.git"
+  },
+  "keywords": [],
+  "author": "Jan Florian Dietrich <jfd@daenen4.de> (http://www.daenen4.de/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luhmann/daenen-next/issues"
+  },
+  "homepage": "https://github.com/luhmann/daenen-next#readme",
+  "dependencies": {
+    "next": "^3.0.0-beta11",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "eslint-config-xo-react": "^0.12.0",
+    "eslint-plugin-react": "^7.0.1",
+    "prop-types": "^15.5.10",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extends": "xo-react",
+    "semicolon": false,
+    "space": 2
+  }
+}

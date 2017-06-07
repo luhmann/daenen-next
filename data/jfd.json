@@ -1,0 +1,108 @@
+{
+    "id": "jfd",
+    "name": "Jan Florian Dietrich",
+    "jobTitle": "Front-End Engineer",
+    "email": "jfd@daenen4.de",
+    "skype": "jfdjustme",
+    "externalLinks": [
+        {
+            "label": "Social Networks",
+            "links": [
+                {
+                    "url": "http://www.xing.com/profile/JanFlorian_Dietrich",
+                    "text": "Xing"
+                }
+            ]
+        },
+        {
+          "label": "Programming",
+          "links": [
+            {
+              "url": "https://github.com/luhmann",
+              "text": "Github"
+            }
+          ]
+        }
+    ],
+    "qualification": [
+        "Web Design & Frontend Development",
+        "Fullstack JavaScript & PHP Development",
+        "Isomorphic/Universal Responsive Web Apps, Progressive Web Apps",
+        "User-Interface & User-Experience Design",
+        "Information Architecture",
+        "Automated Testing"
+    ],
+    "projects": [
+        {
+            "client": "ePost Development GmbH",
+            "description": "Full-Stack-Development for Mail-Portal using AngularJS/Angular2, Webpack, Scala & Play",
+            "link": "http://www.epost.de"
+        },
+        {
+            "client": "MyVideo / ProSiebenSat1 Digital",
+            "description": "Frontend & Mobile Development for the MyVideo online video platform",
+            "link": "http://www.myvideo.de"
+        },
+        {
+            "client": "Evinum",
+            "description": "Development of an information retrieval and management system for wine data in Python",
+            "link": "http://www.evinum.de"
+        },
+        {
+            "client": "tape.tv & SPIEGELOnline",
+            "description": "Facebook-App-Development with OpenGraph-API",
+            "link": null
+        },
+        {
+            "client": "Home24",
+            "description": "Shop-Development with Zend Framework",
+            "link": "http://www.home24.de"
+        },
+        {
+            "client": "Globus Deutschland",
+            "description": "Module-Development in yii/PHP5",
+            "link": "http://www.globus.de"
+        },
+        {
+            "client": "Wir sind Helden",
+            "description": "Wordpress-Development for Band-Webpage",
+            "link": "http://www.wirsindhelden.de"
+        },
+        {
+            "client": "Weitclick",
+            "description": "Projects involving PHP/yii/JQuery/jQTouch",
+            "link": "http://www.weitclick.de"
+        },
+        {
+            "client": "MDT24",
+            "description": "Drupal 6 Development for a travel insurance broker",
+            "link": "http://www.mdt24.de/"
+        },
+        {
+            "client": "Bananenbiegerei",
+            "description": "Wordpress Development for graphic design portfolio",
+            "link": "http://www.bananenbiegerei.de/"
+        }
+    ],
+    "technologies": [
+        "JavaScript, ES6/ES2015, Typescript, NodeJS",
+        "React, React Native, Redux/Flux, ImmutableJS",
+        "Angular, Angular2",
+        "Vue.js 1/2, Inferno, Polymer, Elm",
+        "Build Tools (NPM, Webpack, Babel, Grunt, Gulp, Browserify)",
+        "Testing (PHPUnit, Jasmine, Mocha, Karma, Protractor, NightwatchJS, CasperJS, Sinon, Behat, Selenium)",
+        "PHP5, Hack/HHVM",
+        "PHP Frameworks (Symfony 2, Laravel, Zend Framework 2, yii)",
+        "HTML5, WAI-ARIA, WebComponents",
+        "CSS & Preprocessors (CSS3/4, CSS Modules, BEM, SMACSS, PostCSS, SASS, Stylus, Less)",
+        "Design Patterns (Mobile First, Responsive/Adaptive Design, Grid Systems, Information Architecture)",
+        "CMS (Wordpress, Drupal 7/8, Ghost)",
+        "DBMS & Migrations (MySql/MariaDB, PostgreSQL, Doctrine, Eloquent)",
+        "NoSQL (Redis, Riak, MongoDB, CouchDB)",
+        "Solr, Lucene, Elasticsearch",
+        "Scala/Play",
+        "Python 2/3, Flask, Django, Scrapy",
+        "Server (Varnish, Nginx, Tornado, Express, Koa)"
+    ],
+    "additional": "Please ask for my profile for detailed information"
+}
