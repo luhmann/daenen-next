@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {branch, renderComponent, renderNothing} from 'recompose'
 
 import DeveloperSection from './developer-section'
 import DeveloperTitle from './developer-title'
@@ -12,7 +13,7 @@ const Developer = ({data}) => (
 
 
     <DeveloperSection>
-      {Boolean(data.phone) && <ElementWithLabel label="Phone">{data.phone}</ElementWithLabel>}
+      { branch((data) => Boolean(data.phone), renderComponent(<ElementWithLabel label="Phone">{data.phone}</ElementWithLabel>), renderNothing())(data)}
 
       <ElementWithLabel label="E-Mail">
         {data.email}

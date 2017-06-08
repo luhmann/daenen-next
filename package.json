@@ -24,7 +24,8 @@
   "dependencies": {
     "next": "^3.0.0-beta11",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "recompose": "^0.23.5"
   },
   "devDependencies": {
     "eslint-config-xo-react": "^0.12.0",

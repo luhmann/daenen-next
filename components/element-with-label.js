@@ -14,7 +14,7 @@ const ElementWithLabel = ({children, label}) => (
 )
 
 ElementWithLabel.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
   label: PropTypes.string.isRequired
 }
 
