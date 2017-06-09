@@ -10,6 +10,11 @@ const wrapper = ({ title, children }) =>
     <Head>
       <title>{title}</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link
+        rel="shortcut icon"
+        type="image/x-icon"
+        href="/static/favicon.ico"
+      />
     </Head>
     <div className="wrapper">
       <Layout>{children}</Layout>

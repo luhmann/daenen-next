@@ -67,9 +67,9 @@
   },
   "lint-staged": {
     "*.js": [
-      "xo",
       "prettier --write --no-semi --single-quote --trailing-comma es5",
-      "git add"
+      "git add",
+      "xo"
     ]
   }
 }
