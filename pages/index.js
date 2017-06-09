@@ -7,6 +7,7 @@ import hp from '../data/hp'
 export default () =>
   <section>
     <Wrapper>
+      
       <Developer data={jfd} />
       <Developer data={hp} />
     </Wrapper>

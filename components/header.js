@@ -1,7 +1,9 @@
 import Link from 'next/link'
 
+import { contentBox, sizes } from '../lib/style-utils'
+
 export default () =>
-  <header>
+  <header className="header">
     <Link href="/" prefetch data-e2e="header">
       <a>
         <img
@@ -12,10 +14,16 @@ export default () =>
           title="Softwarehaus Dänen4 | Sonntagstr. 4 | 10245 Berlin"
           alt="Softwarehaus Dänen4 | Sonntagstr. 4 | 10245 Berlin"
         />
-        <style jsx>{`
-          .header--logo {
-          }
-        `}</style>
       </a>
     </Link>
+    <style jsx>{`
+      .header {
+        ${contentBox}
+        text-align: center;
+        padding: ${sizes.standardPadding} 0;
+      }
+      .header--logo {
+        max-width: 90%;
+      }
+    `}</style>
   </header>

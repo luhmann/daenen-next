@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
-import MailTo from 'react-mailto'
 
 import ContentSection from './content-section'
 import DeveloperTitle from './developer-title'
 import ElementWithLabel from './element-with-label'
 import ExternalLinks from './external-links'
+import MailToLink from './mailto-link'
 import ProjectList from './project-list'
 import Technologies from './technologies'
 
@@ -15,7 +15,7 @@ const Developer = ({ data }) =>
     <ContentSection>
       <ElementWithLabel label="Phone">{data.phone}</ElementWithLabel>
       <ElementWithLabel label="E-Mail">
-        <MailTo email={data.email} obfuscate>{data.email}</MailTo>
+        <MailToLink email={data.email} />
       </ElementWithLabel>
       <ElementWithLabel label="Skype">{data.skype}</ElementWithLabel>
     </ContentSection>
