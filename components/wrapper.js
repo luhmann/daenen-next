@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-import { breakpoints, contentBox, fonts, link, sizes } from '../lib/style-utils'
-import Header from './header'
-import Footer from './footer'
+import { fonts, link, sizes } from '../lib/style-utils'
+
+import Layout from './layout'
 
 const wrapper = ({ title, children }) =>
   <div>
@@ -12,11 +12,7 @@ const wrapper = ({ title, children }) =>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <div className="wrapper">
-      <Header />
-      <main className="content">
-        {children}
-      </main>
-      <Footer />
+      <Layout>{children}</Layout>
     </div>
     <style jsx global>{`
       * {
@@ -46,19 +42,8 @@ const wrapper = ({ title, children }) =>
     `}</style>
     <style jsx>{`
       .wrapper {
-        margin: 0 auto;
-        width: 100%;
-      }
-
-      .content {
-        ${contentBox}
-        padding: ${sizes.standardPadding}
-      }
-
-      @media screen and (min-width: ${breakpoints.mobile}) {
-        .wrapper {
-          width: 73.84615em;;
-        }
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTAwJScgaGVpZ2h0PSczMDAnPgoJPGRlZnM+CgkJPGcgaWQ9J2MnPgoJCQk8ZWxsaXBzZSBjeD0nNTAlJyByeD0nNTAlJyByeT0nMjAwJScgZmlsbC1vcGFjaXR5PScwLjInIGZpbGw9JyNmZmZmZmYnLz4KCQk8L2c+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjMEEyMTQwJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PSctMjAwJScvPgoJPHVzZSB4bGluazpocmVmPScjYycgeT0nLTE3NSUnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2MnIHk9Jy0xNTAlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PSctMTI1JScvPgoJPHVzZSB4bGluazpocmVmPScjYycgeT0nLTEwMCUnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2MnIHk9Jy03NSUnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2MnIHk9Jy01MCUnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2MnIHk9Jy0yNSUnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2MnIHk9JzAlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScyNSUnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2MnIHk9JzUwJScvPgoJPHVzZSB4bGluazpocmVmPScjYycgeT0nNzUlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScxMDAlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScxMjUlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScxNTAlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScxNzUlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScyMDAlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScyMjUlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScyNTAlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PScyNzUlJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNjJyB5PSczMDAlJy8+Cjwvc3ZnPg==');
+        overflow: auto;
       }
     `}</style>
   </div>

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { contentBox, sizes } from '../lib/style-utils'
+import { breakpoints, contentBox, sizes } from '../lib/style-utils'
 
 export default () =>
   <header className="header">
@@ -24,6 +24,19 @@ export default () =>
       }
       .header--logo {
         max-width: 90%;
+      }
+
+      @media screen and (min-width: ${breakpoints.mobile}) {
+        .header {
+          height: ${sizes.headerHeight};
+          position: relative;
+        }
+
+        .header--logo {
+          position: absolute
+          bottom: 53px
+          left: 540px
+        }
       }
     `}</style>
   </header>

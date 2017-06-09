@@ -10,14 +10,17 @@ const ExternalLinks = ({ config }) =>
     {config.map(group =>
       <ElementWithLabel key={group.label} label={group.label}>
         {group.links.map((link, index) =>
-          <Link
-            key={hash(`${link.url}-${index}`)}
-            target="_blank"
-            url={link.url}
-          >
-            {link.text}
-          </Link>
+          <span key={hash(`${link.url}-${index}`)} className="external-link">
+            <Link target="_blank" url={link.url}>
+              {link.text}
+            </Link>
+          </span>
         )}
+        <style jsx>{`
+          .external-link:not(:last-child)::after {
+            content: ', ';
+          }
+        `}</style>
       </ElementWithLabel>
     )}
   </div>

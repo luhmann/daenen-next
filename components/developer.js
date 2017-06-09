@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 
+import { breakpoints, sizes } from '../lib/style-utils'
+
 import ContentSection from './content-section'
 import DeveloperTitle from './developer-title'
 import ElementWithLabel from './element-with-label'
@@ -41,6 +43,19 @@ const Developer = ({ data }) =>
     <ContentSection>
       {data.additional}
     </ContentSection>
+
+    <style jsx>{`
+      .developer {
+        margin-top: ${sizes.standardPadding}
+      }
+
+      @media screen and (min-width: ${breakpoints.mobile}) {
+        .developer {
+          margin-top: 0;
+          padding: 0 30px;
+        }
+      }
+    `}</style>
   </section>
 
 Developer.propTypes = {
