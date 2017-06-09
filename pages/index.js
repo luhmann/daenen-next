@@ -1,15 +1,13 @@
-import React from 'react'
-
 import Developer from '../components/developer'
 import Wrapper from '../components/wrapper'
 
 import jfd from '../data/jfd'
 import hp from '../data/hp'
 
-export default () => (
+export default () =>
   <section>
     <Wrapper>
-      <Developer data={hp}/>
+      <Developer data={jfd} />
+      <Developer data={hp} />
     </Wrapper>
   </section>
-)

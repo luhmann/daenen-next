@@ -1,12 +1,11 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 import { fonts, sizes } from '../lib/style-utils'
 
-import DeveloperSection from './developer-section'
+import ContentSection from './content-section'
 
 const DeveloperTitle = ({ name, jobTitle }) =>
-  <DeveloperSection>
+  <ContentSection>
     <h3 className="developer--name">{name}</h3>
     <div className="developer--job-title">{jobTitle}</div>
     <style jsx>{`
@@ -18,7 +17,7 @@ const DeveloperTitle = ({ name, jobTitle }) =>
         font-style: italic;
       }
     `}</style>
-  </DeveloperSection>
+  </ContentSection>
 
 DeveloperTitle.propTypes = {
   name: PropTypes.string.isRequired,

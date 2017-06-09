@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 import { breakpoints } from '../lib/style-utils'
@@ -28,7 +27,7 @@ const wrapper = ({ children }) =>
   </div>
 
 wrapper.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default wrapper

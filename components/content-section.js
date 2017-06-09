@@ -1,20 +1,19 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 import { section } from '../lib/style-utils'
 
-const DeveloperSection = ({ children }) =>
-  <div className="developer--section">
+const ContentSection = ({ children }) =>
+  <div className="content-section">
     {children}
     <style jsx>{`
-      .developer--section {
+      .content-section {
         ${section}
       }
     `}</style>
   </div>
 
-DeveloperSection.propTypes = {
+ContentSection.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default DeveloperSection
+export default ContentSection

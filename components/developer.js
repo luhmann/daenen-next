@@ -1,8 +1,7 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import MailTo from 'react-mailto'
 
-import DeveloperSection from './developer-section'
+import ContentSection from './content-section'
 import DeveloperTitle from './developer-title'
 import ElementWithLabel from './element-with-label'
 import ExternalLinks from './external-links'
@@ -13,35 +12,35 @@ const Developer = ({ data }) =>
   <section className="developer">
     <DeveloperTitle name={data.name} jobTitle={data.jobTitle} />
 
-    <DeveloperSection>
+    <ContentSection>
       <ElementWithLabel label="Phone">{data.phone}</ElementWithLabel>
       <ElementWithLabel label="E-Mail">
         <MailTo email={data.email} obfuscate>{data.email}</MailTo>
       </ElementWithLabel>
       <ElementWithLabel label="Skype">{data.skype}</ElementWithLabel>
-    </DeveloperSection>
+    </ContentSection>
 
-    <DeveloperSection>
+    <ContentSection>
       <ExternalLinks config={data.externalLinks} />
-    </DeveloperSection>
+    </ContentSection>
 
-    <DeveloperSection>
+    <ContentSection>
       <ElementWithLabel label="I do">
         {data.qualification.join(', ')}.
       </ElementWithLabel>
-    </DeveloperSection>
+    </ContentSection>
 
-    <DeveloperSection>
+    <ContentSection>
       <ProjectList projects={data.projects} />
-    </DeveloperSection>
+    </ContentSection>
 
-    <DeveloperSection>
+    <ContentSection>
       <Technologies technologies={data.technologies} />
-    </DeveloperSection>
+    </ContentSection>
 
-    <DeveloperSection>
+    <ContentSection>
       {data.additional}
-    </DeveloperSection>
+    </ContentSection>
   </section>
 
 Developer.propTypes = {
