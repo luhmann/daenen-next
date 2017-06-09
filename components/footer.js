@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-import {contentBox} from '../lib/style-utils'
+import { contentBox } from '../lib/style-utils'
 
 export default () =>
-  (<footer className="footer" data-e2e="footer">
+  <footer className="footer" data-e2e="footer">
     Softwarehaus Dänen4, Sonntagstraße 4, 10245&nbsp;Berlin &nbsp;&nbsp;|&nbsp;
     &nbsp;
     <Link data-e2e="impress-link" href="/impress"><a>Impressum</a></Link>
@@ -16,4 +16,4 @@ export default () =>
         text-align: center;
       }
     `}</style>
-  </footer>)
+  </footer>

@@ -28,13 +28,36 @@
     "recompose": "^0.23.5"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^2.1.1",
     "eslint-config-xo-react": "^0.12.0",
+    "eslint-plugin-prettier": "^2.1.1",
     "eslint-plugin-react": "^7.0.1",
+    "munge": "^0.1.8",
+    "prettier": "^1.4.4",
     "prop-types": "^15.5.10",
+    "react-mailto": "^0.4.0",
+    "short-hash": "^1.0.0",
     "xo": "^0.18.2"
   },
   "xo": {
-    "extends": "xo-react",
+    "extends": [
+      "xo-react",
+      "prettier",
+      "prettier/react"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "trailingComma": "es5",
+          "singleQuote": true,
+          "semi": false
+        }
+      ]
+    },
     "semicolon": false,
     "space": 2
   }

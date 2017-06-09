@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ElementWithLabel = ({children, label}) => (
+import { hideIfNoChildren } from '../lib/hoc-helper'
+
+const ElementWithLabel = hideIfNoChildren(({ children, label }) =>
   <div className="text">
     <div className="text--label">{label}:</div>
     {children}
@@ -14,8 +16,8 @@ const ElementWithLabel = ({children, label}) => (
 )
 
 ElementWithLabel.propTypes = {
-  children: PropTypes.node.isRequired,
-  label: PropTypes.string.isRequired
+  children: PropTypes.node,
+  label: PropTypes.string.isRequired,
 }
 
 export default ElementWithLabel

@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import {breakpoints} from '../lib/style-utils'
+import { breakpoints } from '../lib/style-utils'
 import Header from './header'
 import Footer from './footer'
 
-const wrapper = ({children}) => (
+const wrapper = ({ children }) =>
   <div className="wrapper">
-    <Header/>
+    <Header />
     <main className="content">
       {children}
     </main>
-    <Footer/>
+    <Footer />
     <style jsx>{`
       .wrapper {
         margin: 0 auto;
@@ -26,10 +26,9 @@ const wrapper = ({children}) => (
 
     `}</style>
   </div>
-)
 
 wrapper.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.element.isRequired,
 }
 
 export default wrapper

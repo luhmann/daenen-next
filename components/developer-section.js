@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import {section} from '../lib/style-utils'
+import { section } from '../lib/style-utils'
 
-const DeveloperSection = ({children}) => (
+const DeveloperSection = ({ children }) =>
   <div className="developer--section">
     {children}
     <style jsx>{`
@@ -12,10 +12,9 @@ const DeveloperSection = ({children}) => (
       }
     `}</style>
   </div>
-)
 
 DeveloperSection.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default DeveloperSection
