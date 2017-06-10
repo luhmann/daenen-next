@@ -10,6 +10,14 @@ const wrapper = ({ title, children }) =>
     <Head>
       <title>{title}</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta
+        name="google-site-verification"
+        content="Tf_svAvbDdyxf9-HsOZvCfFPv5awnjrgpTkeOLxQLEU"
+      />
+      <meta
+        name="description"
+        content="Softwarehaus Dänen4 offers Software Development and IT Consulting in Berlin, Germany"
+      />
       <link
         rel="shortcut icon"
         type="image/x-icon"
