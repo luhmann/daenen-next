@@ -4,16 +4,21 @@ branches:
   only:
     - master
 
+install:
+  - npm install cloudfront-invalidate-cli -g
+  - npm install
+
 script:
 - npm run export
 
 deploy:
   provider: s3
-  access_key_id:
-    secure: 35nyfvmxj0WUOM37QKHgJWywqxACIPSYNbeaS6dKGc1s4bXVq0jE/EZFxgsBgKas2BtWVyB0jJf9suNNsB244dH24kfrtyb1AbdRgv+o8zzKAEo24hSfrfh43bz/SMQBgPapcajXpds7OisDJDr8d+LlM2q5CPQq+eJG8iCUvNznqwRd/KmpvFszO0z8jUp3gIMDTY/G0OLGWkQuuvjLrZbzBUnPEGIphx80QZXgt3HhS8khQb61hkGQcJSsrHANTJsDKgvGsVAyT/xFhGn0nBPFU3CbeSeHTjVmlxR9M/s9sYA9rOVEZIv/O6/HYHKbJ0t8Dc2WcM/kGVRh9mKx0tuywvcVfamCxPQkLvlg6Ak5gmuu1zLgMHC10crys/0pYlszGMZ+4RXG8axNzzrNwP4NRGFqzjn+YKznczKrg6MTst4GEfs41r6z3BEgLFyc/aPwckFsVoMEzu9ZhLrBs7EzWShVbmUHAH1y7R5NNBDyiuyq3rFLg1u0NT5CXvHqFdFbhuD2og/2Iefb7vn0RKsvCbf/pXLQryv0DLG5iikPd7a86+0VmgA5GGrvDnq55b6nm7AilDV1CJobQK/fN/1hvVtzibzL7HIFmi5yBsyWf0eqOIDHWj9QBqno1WrQodqiEtHboUIpzuMrAt3IAeSjOavLgtKMsCh1DivBNys=
-  secret_access_key:
-    secure: zfwymi7qDNoT7kNDyXRru4kpPRRmJW8py6sT6w4tZ6o4uxpeTt73bak6+rTywDvj8loryALcmVuOC2igwGDmACNWVX4YfHIVIXCCCLT/fuqDlScCDjuvcr2jJfbBx8iLxPHo75KbCBxyA0nYnydd6njs+kJGbdEw6wqfxrym3w/DnhCFGH3TACfWJZ7tMRCQmHwu4P3ATtGg8/a0bXwQcRCF+3XNBARV91WQD+HOKTPu6WzZQi7Jc5Wyv5x0wmcGSPQwc5KrEQ9hLK34kpHWlPEYn9eFjMsUXO85m1rq84JutWfUSYUS6dHWPivXwhyWv/DFhmaPp2uxxYzbhsESQUcJGeOJg+ZUHsHDR/MASICegxK8cAFjNF2/pYdTNaQC8xCOB4Hb/jtnaTzDIkX7ofT+ED4WpE5i+01bZaFvuDdHUMqWwaz8WrqIYuzBqcoWk9SAs9PbBdzDDHZDiokjZFKBkNkgXWK4F9SW/KOcdONZh6tU6OEdjOiSQC63tHwwImDAURNJ4Rk6LQ4gv9vNrCJZAlAfiuSVVGOzodG3JqTsxaNok6ZWOb9lHGUl7/zYLrHK2X/RGhlXJQnBur9Kit5acqasrCAwcqBZOHhowVWnSqlgArxLLEYRaMbvWoOwKcpZPN3NU7qFAHW3PBJCSIOvPZtGvSE5QqpIoRs8ReQ=
-  bucket: daenen4
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: $AWS_BUCKET
   region: eu-central-1
   local_dir: out
   skip_cleanup: true
+
+after_deploy:
+  - cf-invalidate -- $CLOUDFRONT_ID index.html
