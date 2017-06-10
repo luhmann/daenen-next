@@ -10,6 +10,7 @@ install:
 
 script:
 - npm run export
+- npm run test:ci
 
 deploy:
   provider: s3

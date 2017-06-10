@@ -8,7 +8,7 @@ import Footer from './footer'
 const Layout = ({ children }) =>
   <div className="layout">
     <Header />
-    <main className="content">
+    <main className="content" data-e2e="content">
       {children}
     </main>
     <Footer />

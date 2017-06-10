@@ -3,10 +3,11 @@ import Link from 'next/link'
 import { breakpoints, contentBox, sizes } from '../lib/style-utils'
 
 export default () =>
-  <header className="header">
-    <Link href="/" prefetch data-e2e="header">
+  <header className="header" data-e2e="header">
+    <Link href="/" prefetch>
       <a>
         <img
+          data-e2e="home-link"
           className="header--logo"
           src="/static/logo.svg"
           width="364"

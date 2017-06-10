@@ -9,7 +9,8 @@
     "export": "next build && next export",
     "precommit": "lint-staged",
     "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "testcafe chrome tests/e2e",
+    "test:ci": "testcafe nightmare tests/e2e --app 'http-server ./out -p 3000'"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,8 @@
     "eslint-config-xo-react": "^0.12.0",
     "eslint-plugin-prettier": "^2.1.1",
     "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-testcafe": "^0.2.1",
+    "http-server": "^0.10.0",
     "husky": "^0.13.4",
     "lint-staged": "^3.6.0",
     "munge": "^0.1.8",
@@ -40,16 +43,20 @@
     "prop-types": "^15.5.10",
     "react-mailto": "^0.4.0",
     "short-hash": "^1.0.0",
+    "testcafe": "^0.15.0",
+    "testcafe-browser-provider-nightmare": "0.0.4",
     "xo": "^0.18.2"
   },
   "xo": {
     "extends": [
       "xo-react",
       "prettier",
-      "prettier/react"
+      "prettier/react",
+      "plugin:testcafe/recommended"
     ],
     "plugins": [
-      "prettier"
+      "prettier",
+      "testcafe"
     ],
     "rules": {
       "react/react-in-jsx-scope": 0,

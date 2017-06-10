@@ -11,7 +11,7 @@ import ProjectList from './project-list'
 import Technologies from './technologies'
 
 const Developer = ({ data }) =>
-  <section className="developer">
+  <section className="developer" data-e2e="developer">
     <DeveloperTitle name={data.name} jobTitle={data.jobTitle} />
 
     <ContentSection>

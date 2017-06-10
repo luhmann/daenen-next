@@ -7,7 +7,7 @@ import jfd from '../data/jfd'
 
 export default () =>
   <Wrapper>
-    <h1>Impressum</h1>
+    <h1 data-e2e="impress">Impressum</h1>
 
     <ContentSection>
       Softwarehaus Dänen4<br />
@@ -31,9 +31,9 @@ export default () =>
       </ElementWithLabel>
     </ContentSection>
 
-    <ContentSection data-e2e="ust">
+    <ContentSection>
       <ElementWithLabel label="Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz">
-        <br />DE&nbsp;252170892
+        <br data-e2e="ust" />DE&nbsp;252170892
       </ElementWithLabel>
     </ContentSection>
   </Wrapper>

@@ -12,13 +12,20 @@ const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }) =>
   <ElementWithLabel label="Clients and Projects">
     <ul>
       {projects.slice(0, isExpanded ? projects.length : 4).map(project =>
-        <li key={hash(`${project.client}-${project.description}`)}>
+        <li
+          key={hash(`${project.client}-${project.description}`)}
+          data-e2e="project"
+        >
           <Link url={project.link}>{project.client}</Link>&thinsp;
           ({project.description})
         </li>
       )}
     </ul>
-    <button className="more-button" onClick={toggleExpanded}>
+    <button
+      className="more-button"
+      onClick={toggleExpanded}
+      data-e2e="more-button"
+    >
       {buttonText}
     </button>
     <style jsx>{`
