@@ -5,9 +5,11 @@ import ElementWithLabel from '../components/element-with-label'
 import Wrapper from '../components/wrapper'
 import jfd from '../data/jfd'
 
+import { sizes } from '../lib/style-utils'
+
 export default () =>
   <Wrapper>
-    <h1 data-e2e="impress">Impressum</h1>
+    <h1 className="impress-headline" data-e2e="impress">Impressum</h1>
 
     <ContentSection>
       Softwarehaus Dänen4<br />
@@ -36,4 +38,9 @@ export default () =>
         <br data-e2e="ust" />DE&nbsp;252170892
       </ElementWithLabel>
     </ContentSection>
+    <style jsx>{`
+      .impress-headline {
+        font-size: ${sizes.fontHeadline}
+      }
+    `}</style>
   </Wrapper>
