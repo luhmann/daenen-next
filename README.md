@@ -1,5 +1,7 @@
 # daenen-next [![Build Status](https://travis-ci.org/luhmann/daenen-next.svg?branch=master)](https://travis-ci.org/luhmann/daenen-next)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/luhmann/daenen-next.svg)](https://greenkeeper.io/)
+
 The react-powered webpage of [daenen4.de](http://www.daenen4.de) based on [next.js](https://github.com/zeit/next.js/)
 
 ## Usage
