@@ -1,4 +1,5 @@
-# daenen-next
+# daenen-next [![Build Status](https://travis-ci.org/luhmann/daenen-next.svg?branch=master)](https://travis-ci.org/luhmann/daenen-next)
+
 The react-powered webpage of [daenen4.de](http://www.daenen4.de) powered by [next.js](https://github.com/zeit/next.js/)
 
 ## Usage
