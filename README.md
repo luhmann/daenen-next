@@ -1,6 +1,6 @@
 # daenen-next [![Build Status](https://travis-ci.org/luhmann/daenen-next.svg?branch=master)](https://travis-ci.org/luhmann/daenen-next)
 
-The react-powered webpage of [daenen4.de](http://www.daenen4.de) powered by [next.js](https://github.com/zeit/next.js/)
+The react-powered webpage of [daenen4.de](http://www.daenen4.de) based on [next.js](https://github.com/zeit/next.js/)
 
 ## Usage
 1. Make sure you have nvm installed. http://nvm.sh
