@@ -43,7 +43,7 @@
     "prop-types": "^15.5.10",
     "react-mailto": "^0.4.0",
     "short-hash": "^1.0.0",
-    "testcafe": "^0.15.0",
+    "testcafe": "^0.16.0",
     "testcafe-browser-provider-nightmare": "0.0.4",
     "xo": "^0.18.2"
   },
