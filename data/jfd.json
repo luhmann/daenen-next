@@ -34,7 +34,7 @@
   "projects": [
     {
       "client": "commercetools GmbH",
-      "description": "Full-Stack-Development for eCommerce-Platform using React, Redux, GraphQL, NodeJS",
+      "description": "Development an API-first eCommerce-Platform using React, Redux, GraphQL, NodeJS",
       "link": "https://commercetools.com"
     },
     {
