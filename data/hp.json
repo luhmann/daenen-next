@@ -38,6 +38,12 @@
   ],
   "projects": [
     {
+      "client": "Deutsche Bank",
+      "description":
+        "Development of backend systems for a white-label automatic investment solution",
+      "link": null
+    },
+    {
       "client": "ImmobilienScout24",
       "description":
         "Developing data-driven products using Scala, Play and Elastic",
