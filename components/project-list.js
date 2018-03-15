@@ -8,18 +8,19 @@ import { colors, fonts, sizes } from '../lib/style-utils'
 import ElementWithLabel from './element-with-label'
 import Link from './link'
 
-const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }) =>
+const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }) => (
   <ElementWithLabel label="Clients and Projects">
     <ul>
-      {projects.slice(0, isExpanded ? projects.length : 4).map(project =>
+      {projects.slice(0, isExpanded ? projects.length : 4).map(project => (
         <li
           key={hash(`${project.client}-${project.description}`)}
           data-e2e="project"
         >
-          <Link url={project.link}>{project.client}</Link>&thinsp;
-          ({project.description})
+          <Link url={project.link}>{project.client}</Link>&thinsp; ({
+            project.description
+          })
         </li>
-      )}
+      ))}
     </ul>
     <button
       className="more-button"
@@ -42,6 +43,7 @@ const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }) =>
       }
     `}</style>
   </ElementWithLabel>
+)
 
 ProjectList.propTypes = {
   buttonText: PropTypes.string.isRequired,

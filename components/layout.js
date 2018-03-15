@@ -5,7 +5,7 @@ import { breakpoints, contentBox, sizes } from '../lib/style-utils'
 import Header from './header'
 import Footer from './footer'
 
-const Layout = ({ children }) =>
+const Layout = ({ children }) => (
   <div className="layout">
     <Header />
     <main className="content" data-e2e="content">
@@ -30,6 +30,7 @@ const Layout = ({ children }) =>
       }
     `}</style>
   </div>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

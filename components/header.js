@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { breakpoints, contentBox, sizes } from '../lib/style-utils'
 
-export default () =>
+export default () => (
   <header className="header" data-e2e="header">
     <Link href="/" prefetch>
       <a>
@@ -41,3 +41,4 @@ export default () =>
       }
     `}</style>
   </header>
+)

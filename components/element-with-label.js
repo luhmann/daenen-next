@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { hideIfNoChildren } from '../lib/hoc-helper'
 import { sizes } from '../lib/style-utils'
 
-const ElementWithLabel = hideIfNoChildren(({ children, label }) =>
+const ElementWithLabel = hideIfNoChildren(({ children, label }) => (
   <div className="text">
     <span className="text--label">{label}:</span>
     {children}
@@ -14,7 +14,7 @@ const ElementWithLabel = hideIfNoChildren(({ children, label }) =>
       }
     `}</style>
   </div>
-)
+))
 
 ElementWithLabel.propTypes = {
   children: PropTypes.node,

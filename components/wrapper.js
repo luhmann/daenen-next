@@ -5,7 +5,7 @@ import { fonts, gradients, link, sizes } from '../lib/style-utils'
 
 import Layout from './layout'
 
-const wrapper = ({ title, children }) =>
+const wrapper = ({ title, children }) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -32,20 +32,26 @@ const wrapper = ({ title, children }) =>
         box-sizing: border-box;
       }
 
-      html, body {
+      html,
+      body {
         min-height: 100vh;
       }
 
       body {
         margin: 0;
         font-family: ${fonts.base};
-        font-feature-settings: "kern", "liga", "pnum";
+        font-feature-settings: 'kern', 'liga', 'pnum';
         font-size: ${sizes.fontBase};
         line-height: ${sizes.lineHeightBase};
         -webkit-font-smoothing: subpixel-antialiased;
       }
 
-      h1, h2, h3, h4, h5, h6 {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         font-family: ${fonts.headline};
         font-size: ${sizes.fontBase};
         line-height: ${sizes.lineHeightHeadline};
@@ -53,9 +59,8 @@ const wrapper = ({ title, children }) =>
       }
 
       a {
-        ${link}
+        ${link};
       }
-
     `}</style>
     <style jsx>{`
       .wrapper {
@@ -65,6 +70,7 @@ const wrapper = ({ title, children }) =>
       }
     `}</style>
   </div>
+)
 
 wrapper.propTypes = {
   title: PropTypes.string,

@@ -10,7 +10,7 @@ import MailToLink from './mailto-link'
 import ProjectList from './project-list'
 import Technologies from './technologies'
 
-const Developer = ({ data }) =>
+const Developer = ({ data }) => (
   <section className="developer" data-e2e="developer">
     <DeveloperTitle name={data.name} jobTitle={data.jobTitle} />
 
@@ -40,9 +40,7 @@ const Developer = ({ data }) =>
       <Technologies technologies={data.technologies} />
     </ContentSection>
 
-    <ContentSection>
-      {data.additional}
-    </ContentSection>
+    <ContentSection>{data.additional}</ContentSection>
 
     <style jsx>{`
       .developer:nth-child(2) {
@@ -60,6 +58,7 @@ const Developer = ({ data }) =>
       }
     `}</style>
   </section>
+)
 
 Developer.propTypes = {
   data: PropTypes.object.isRequired,

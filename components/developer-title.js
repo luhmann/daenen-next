@@ -4,7 +4,7 @@ import { fonts, sizes } from '../lib/style-utils'
 
 import ContentSection from './content-section'
 
-const DeveloperTitle = ({ name, jobTitle }) =>
+const DeveloperTitle = ({ name, jobTitle }) => (
   <ContentSection>
     <h3 className="developer--name">{name}</h3>
     <div className="developer--job-title">{jobTitle}</div>
@@ -18,6 +18,7 @@ const DeveloperTitle = ({ name, jobTitle }) =>
       }
     `}</style>
   </ContentSection>
+)
 
 DeveloperTitle.propTypes = {
   name: PropTypes.string.isRequired,

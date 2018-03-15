@@ -7,9 +7,11 @@ import jfd from '../data/jfd'
 
 import { sizes } from '../lib/style-utils'
 
-export default () =>
+export default () => (
   <Wrapper>
-    <h1 className="impress-headline" data-e2e="impress">Impressum</h1>
+    <h1 className="impress-headline" data-e2e="impress">
+      Impressum
+    </h1>
 
     <ContentSection>
       Softwarehaus Dänen4<br />
@@ -19,11 +21,11 @@ export default () =>
     </ContentSection>
 
     <ContentSection>
-      <ElementWithLabel label="Telefon">
-        030 29044581
-      </ElementWithLabel>
+      <ElementWithLabel label="Telefon">030 29044581</ElementWithLabel>
       <ElementWithLabel label="E-Mail">
-        <MailTo email={jfd.email} obfuscate>{jfd.email}</MailTo>
+        <MailTo email={jfd.email} obfuscate>
+          {jfd.email}
+        </MailTo>
       </ElementWithLabel>
     </ContentSection>
 
@@ -40,7 +42,8 @@ export default () =>
     </ContentSection>
     <style jsx>{`
       .impress-headline {
-        font-size: ${sizes.fontHeadline}
+        font-size: ${sizes.fontHeadline};
       }
     `}</style>
   </Wrapper>
+)
