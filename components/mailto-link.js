@@ -1,19 +1,10 @@
 import PropTypes from 'prop-types'
-import MailTo from 'react-mailto'
+import Obfuscate from 'react-obfuscate'
 
-const MailToLink = ({ email, obfuscate = true }) => (
-  <MailTo email={email} obfuscate={obfuscate}>
-    {email}
-  </MailTo>
-)
+const MailToLink = ({ email }) => <Obfuscate email={email} />
 
 MailToLink.propTypes = {
   email: PropTypes.string.isRequired,
-  obfuscate: PropTypes.bool,
-}
-
-MailToLink.defaultProps = {
-  obfuscate: true,
 }
 
 export default MailToLink

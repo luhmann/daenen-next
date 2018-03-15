@@ -1,8 +1,7 @@
-import MailTo from 'react-mailto'
-
 import ContentSection from '../components/content-section'
 import ElementWithLabel from '../components/element-with-label'
 import Wrapper from '../components/wrapper'
+import MailToLink from '../components/mailto-link'
 import jfd from '../data/jfd'
 
 import { sizes } from '../lib/style-utils'
@@ -23,9 +22,7 @@ export default () => (
     <ContentSection>
       <ElementWithLabel label="Telefon">030 29044581</ElementWithLabel>
       <ElementWithLabel label="E-Mail">
-        <MailTo email={jfd.email} obfuscate>
-          {jfd.email}
-        </MailTo>
+        <MailToLink email={jfd.email} />
       </ElementWithLabel>
     </ContentSection>
 
