@@ -14,11 +14,11 @@ install:
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
   - npm install cloudfront-invalidate-cli -g
-  - npm install
+  - yarn
 
 script:
-- npm run export
-- npm run test:ci
+- yarn run export
+- yarn run test:ci
 
 deploy:
   provider: s3
