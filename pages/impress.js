@@ -20,7 +20,7 @@ export default () => (
     </ContentSection>
 
     <ContentSection>
-      <ElementWithLabel label="Telefon">030 29044581</ElementWithLabel>
+      <ElementWithLabel label="Telefon">0179 1461388</ElementWithLabel>
       <ElementWithLabel label="E-Mail">
         <MailToLink email="webmaster@daenen4.de" />
       </ElementWithLabel>
@@ -55,6 +55,7 @@ export default () => (
     </ContentSection>
     <ContentSection>
       <ElementWithLabel label="Änderung dieser Datenschutzbestimmungen">
+        <br />
         Es wird das Recht vorbehalten diese Sicherheits- und
         Datenschutzmaßnahmen zu verändern, soweit dies wegen der technischen
         Entwicklung erforderlich wird. In diesen Fällen werden wir auch unsere
