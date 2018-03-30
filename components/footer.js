@@ -7,7 +7,7 @@ export default () => (
     Softwarehaus Dänen4, Sonntagstraße 4, 10245&nbsp;Berlin &nbsp;&nbsp;|&nbsp;
     &nbsp;
     <Link href="/impress">
-      <a data-e2e="impress-link">Impressum</a>
+      <a data-e2e="impress-link">Impressum & Datenschutzhinweis</a>
     </Link>
     <style jsx>{`
       .footer {
