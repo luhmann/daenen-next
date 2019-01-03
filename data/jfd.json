@@ -25,12 +25,18 @@
   ],
   "qualification": [
     "Frontend Application Development",
-    "Fullstack JavaScript & PHP Development",
+    "Fullstack Development",
     "Progressive Web Apps / Single Page Applications",
     "UI/UX",
     "Automated Testing"
   ],
   "projects": [
+    {
+      "client": "Zalando SE",
+      "description":
+        "Fullstack Development for the Returns-Process with React, Redux, NodeJS, Express, Kotlin, PostgreSQL and Kubernetes",
+      "link": "https://www.zalando.de"
+    },
     {
       "client": "commercetools GmbH",
       "description":
@@ -106,6 +112,7 @@
     "CMS: Wordpress, Drupal, Ghost, Contentful",
     "Solr, Lucene, Elasticsearch",
     "Scala/Play Framework",
+    "Kotlin",
     "PHP, Laravel, Symfony, Python,"
   ],
   "additional": "Please ask for my profile for detailed information"
