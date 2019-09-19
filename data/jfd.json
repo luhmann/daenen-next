@@ -32,6 +32,18 @@
   ],
   "projects": [
     {
+      "client": "SIXT Leasing SE",
+      "description":
+        "Relaunch of a car-leasing platform using Angular 8, Angular Universal, Express, Typescript, RxJS, Java, Spring, Elasticsearch",
+      "link": "http://www.sixt-neuwagen.de"
+    },
+    {
+      "client": "WPS Development/Wescale",
+      "description":
+        "Development for a Procurement-Platform using VueJs, Vuex, Node, K8S, Camunda, Java",
+      "link": "http://www.wescale.com"
+    },
+    {
       "client": "Zalando SE",
       "description":
         "Fullstack-Development for the Returns-Process with React, Redux, NodeJS, Express, Kotlin, PostgreSQL and Kubernetes",
