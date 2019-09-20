@@ -1,12 +1,10 @@
-import PropTypes from 'prop-types'
-
 import { fonts, sizes } from '../lib/style-utils'
 
 import ContentSection from './content-section'
 
 export interface DeveloperTitleProps {
-  name: string,
-  jobTitle: string,
+  name: string
+  jobTitle: string
 }
 
 const DeveloperTitle = ({ name, jobTitle }: DeveloperTitleProps) => (

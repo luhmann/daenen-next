@@ -42,7 +42,7 @@
     "testcafe-browser-provider-nightmare": "0.0.5"
   },
   "lint-staged": {
-    "*.js": [
+    "*.ts?(x)": [
       "prettier --write --no-semi --single-quote --trailing-comma es5",
       "git add"
     ]
