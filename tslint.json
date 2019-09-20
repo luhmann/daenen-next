@@ -13,6 +13,14 @@
     "no-sparse-arrays": true,
     "no-unsafe-finally": true,
     "no-unused-variable": [true, { "ignore-pattern": "^_" }],
+    "ordered-imports": {
+      "options": {
+        "grouped-imports": true,
+        "import-sources-order": "case-insensitive",
+        "module-source-path": "full",
+        "named-imports-order": "case-insensitive"
+      }
+    },
     "prefer-object-spread": true,
     "prefer-readonly": true,
     "prefer-template": true

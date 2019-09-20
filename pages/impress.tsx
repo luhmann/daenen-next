@@ -2,7 +2,6 @@ import ContentSection from '../components/content-section'
 import ElementWithLabel from '../components/element-with-label'
 import MailToLink from '../components/mailto-link'
 import Wrapper from '../components/wrapper'
-
 import { getRandomGradient, sizes } from '../lib/style-utils'
 
 export interface ImpressPageProps {
