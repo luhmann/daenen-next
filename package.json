@@ -9,7 +9,8 @@
     "export": "next build && next export",
     "start": "next start",
     "test": "testcafe chrome tests/e2e",
-    "test:ci": "testcafe nightmare tests/e2e --app 'http-server ./out -p 3000'"
+    "test:ci":
+      "testcafe chrome,firefox tests/e2e --app 'http-server ./out -p 3000'"
   },
   "repository": {
     "type": "git",
