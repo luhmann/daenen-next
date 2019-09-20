@@ -18,7 +18,7 @@ install:
 
 script:
 - yarn run export
-- yarn run test:ci
+# - yarn run test:ci
 
 deploy:
   provider: s3
