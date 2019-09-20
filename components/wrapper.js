@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-import { fonts, gradients, link, sizes } from '../lib/style-utils'
+import { fonts, link, sizes } from '../lib/style-utils'
 
 import Layout from './layout'
 
-const wrapper = ({ title, children }) => (
+const wrapper = ({ title, children, gradient }) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -24,7 +24,7 @@ const wrapper = ({ title, children }) => (
         href="/static/favicon.ico"
       />
     </Head>
-    <div className="wrapper">
+    <div className="wrapper" style={{ background: gradient }}>
       <Layout>{children}</Layout>
     </div>
     <style jsx global>{`
@@ -64,7 +64,6 @@ const wrapper = ({ title, children }) => (
     `}</style>
     <style jsx>{`
       .wrapper {
-        background: ${gradients.random};
         min-height: 100vh;
         overflow: auto;
       }
@@ -75,9 +74,11 @@ const wrapper = ({ title, children }) => (
 wrapper.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node.isRequired,
+  gradient: PropTypes.string.isRequired,
 }
 
 wrapper.defaultProps = {
   title: 'Softwarehaus Dänen4',
 }
+
 export default wrapper

@@ -4,7 +4,7 @@ import { breakpoints, contentBox, sizes } from '../lib/style-utils'
 
 export default () => (
   <header className="header" data-e2e="header">
-    <Link href="/" prefetch>
+    <Link href="/">
       <a>
         <img
           data-e2e="home-link"
@@ -34,9 +34,9 @@ export default () => (
         }
 
         .header--logo {
-          position: absolute
-          bottom: 53px
-          left: 540px
+          position: absolute;
+          bottom: 53px;
+          left: 540px;
         }
       }
     `}</style>

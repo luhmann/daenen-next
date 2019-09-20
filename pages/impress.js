@@ -2,19 +2,20 @@ import ContentSection from '../components/content-section'
 import ElementWithLabel from '../components/element-with-label'
 import Wrapper from '../components/wrapper'
 import MailToLink from '../components/mailto-link'
-import jfd from '../data/jfd'
 
-import { sizes } from '../lib/style-utils'
+import { sizes, getRandomGradient } from '../lib/style-utils'
 
-export default () => (
-  <Wrapper>
+const ImpressPage = ({ gradient }) => (
+  <Wrapper gradient={gradient}>
     <h1 className="impress-headline" data-e2e="impress">
       Impressum & Datenschutzhinweis
     </h1>
 
     <ContentSection>
-      Softwarehaus Dänen4<br />
-      Petersen, Dietrich (GbR)<br />
+      Softwarehaus Dänen4
+      <br />
+      Petersen, Dietrich (GbR)
+      <br />
       Sonntagstraße 4<br />
       10245 Berlin
     </ContentSection>
@@ -28,24 +29,27 @@ export default () => (
 
     <ContentSection>
       <ElementWithLabel label="Vertretungsberechtigte Gesellschafter">
-        <br />Jan Florian Dietrich, Henning Petersen
+        <br />
+        Jan Florian Dietrich, Henning Petersen
       </ElementWithLabel>
     </ContentSection>
 
     <ContentSection>
       <ElementWithLabel label="Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz">
-        <br data-e2e="ust" />DE&nbsp;252170892
+        <br data-e2e="ust" />
+        DE&nbsp;252170892
       </ElementWithLabel>
     </ContentSection>
     <ContentSection>
       <ElementWithLabel label="Datenschutzhinweis">
-        <br data-e2e="privacy" />Informationen, die ihr Browser automatisch bei
-        jeder Anfrage mitsendet (IP-Adresse, URL der angefragten Seite, der
-        verwendete Browser, Zeitstempel des Abrufes) werden zur Auslieferung der
-        Seite von Cloudfront/AWS verarbeitet. Diese Informationen werden nicht
-        gespeichert und sind daher für uns nicht einsehbar. Darüberhinaus werden
-        keinerlei persönliche Daten zu ihren Besuchen auf dieser Webseite
-        erfasst, gespeichert oder verarbeitet.
+        <br data-e2e="privacy" />
+        Informationen, die ihr Browser automatisch bei jeder Anfrage mitsendet
+        (IP-Adresse, URL der angefragten Seite, der verwendete Browser,
+        Zeitstempel des Abrufes) werden zur Auslieferung der Seite von
+        Cloudfront/AWS verarbeitet. Diese Informationen werden nicht gespeichert
+        und sind daher für uns nicht einsehbar. Darüberhinaus werden keinerlei
+        persönliche Daten zu ihren Besuchen auf dieser Webseite erfasst,
+        gespeichert oder verarbeitet.
         <br />
         <br />
         Es existieren keine Server-Log-Dateien über ihren Besuch. Diese Seite
@@ -70,3 +74,9 @@ export default () => (
     `}</style>
   </Wrapper>
 )
+
+ImpressPage.getInitialProps = () => ({
+  gradient: getRandomGradient(),
+})
+
+export default ImpressPage

@@ -11,7 +11,8 @@ export default () => (
     </Link>
     <style jsx>{`
       .footer {
-        ${contentBox} margin: 1.46154em 0;
+        ${contentBox}
+        margin: 1.46154em 0;
         padding: 0.73077em 30px;
         text-align: center;
       }
