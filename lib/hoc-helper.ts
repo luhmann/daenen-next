@@ -1,15 +1,17 @@
 import {
-  compose,
   branch,
+  compose,
+  mapper,
   renderNothing,
   withHandlers,
   withState,
-  mapper,
 } from 'recompose'
 
-const hideIfNoData = (hasNoData: mapper<any, boolean>) => branch(hasNoData, renderNothing)
+const hideIfNoData = (hasNoData: mapper<any, boolean>) =>
+  branch(hasNoData, renderNothing)
 
-const hasNoChildren = (props: { children: React.ReactNode}) => Boolean(props.children) === false
+const hasNoChildren = (props: { children: React.ReactNode }) =>
+  Boolean(props.children) === false
 
 const hideIfNoChildren = hideIfNoData(hasNoChildren)
 

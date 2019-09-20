@@ -8,19 +8,24 @@ import ElementWithLabel from './element-with-label'
 import Link from './link'
 
 export interface Project {
-  client: string;
-  description: string;
+  client: string
+  description: string
   link?: string
 }
 
 export interface ProjectListProps {
-  buttonText: string;
-  isExpanded: boolean;
-  projects: Project[];
+  buttonText: string
+  isExpanded: boolean
+  projects: Project[]
   toggleExpanded: () => {}
 }
 
-const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }: ProjectListProps) => (
+const ProjectList = ({
+  buttonText,
+  isExpanded,
+  projects,
+  toggleExpanded,
+}: ProjectListProps) => (
   <ElementWithLabel label="Clients and Projects">
     <ul>
       {projects.slice(0, isExpanded ? projects.length : 4).map(project => (
@@ -28,9 +33,10 @@ const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }: Proje
           key={hash(`${project.client}-${project.description}`)}
           data-e2e="project"
         >
-          <Link url={project.link} target="_blank">{project.client}</Link>&thinsp; ({
-            project.description
-          })
+          <Link url={project.link} target="_blank">
+            {project.client}
+          </Link>
+          &thinsp; ({project.description})
         </li>
       ))}
     </ul>
@@ -57,7 +63,7 @@ const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }: Proje
   </ElementWithLabel>
 )
 
-export default compose<ProjectListProps, { projects: Project[]}>(
+export default compose<ProjectListProps, { projects: Project[] }>(
   toggleLength,
   withProps(({ isExpanded }: { isExpanded: boolean }) => ({
     buttonText: isExpanded ? 'Less Projects' : 'More Projects',

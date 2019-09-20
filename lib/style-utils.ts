@@ -1,9 +1,9 @@
 export const colors = {
+  action: '#ac0022',
   background: 'rgb(255, 255, 255)',
   boxShadow: 'rgba(196, 196, 196, 0.4)',
   contentBackground: 'rgb(255, 255, 255)',
   fontBase: 'rgb(0,0,0)',
-  action: '#ac0022',
 }
 
 export const fonts = {
@@ -54,13 +54,13 @@ export const link = `
 `
 
 export const gradients: Record<string, string> = {
-  noonToDusk: 'linear-gradient(to right bottom, #bfe9ff, #ff6e7f)',
-  visionsGrandeur: 'linear-gradient(to right bottom, #1CB5E0, #000046)',
-  dusk: 'linear-gradient(to right bottom, #19547b, #ffd89b)',
   aquaMarine: 'linear-gradient(to right bottom, #26D0CE, #1A2980)',
-  nightDay: 'linear-gradient(to right bottom, #2c3e50, #3498db)',
+  dusk: 'linear-gradient(to right bottom, #19547b, #ffd89b)',
   hazel: 'linear-gradient(to right bottom, #77a1d3, #79cbca, #e684ae)',
   loveCouple: 'linear-gradient(to right bottom, #3a6186, #89253e)',
+  nightDay: 'linear-gradient(to right bottom, #2c3e50, #3498db)',
+  noonToDusk: 'linear-gradient(to right bottom, #bfe9ff, #ff6e7f)',
+  visionsGrandeur: 'linear-gradient(to right bottom, #1CB5E0, #000046)',
 }
 
 export const getRandomGradient = () => {

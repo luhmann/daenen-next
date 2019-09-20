@@ -1,12 +1,12 @@
 import ContentSection from '../components/content-section'
 import ElementWithLabel from '../components/element-with-label'
-import Wrapper from '../components/wrapper'
 import MailToLink from '../components/mailto-link'
+import Wrapper from '../components/wrapper'
 
-import { sizes, getRandomGradient } from '../lib/style-utils'
+import { getRandomGradient, sizes } from '../lib/style-utils'
 
 export interface ImpressPageProps {
-  gradient: string;
+  gradient: string
 }
 
 const ImpressPage = ({ gradient }: ImpressPageProps) => (

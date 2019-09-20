@@ -4,11 +4,11 @@ import ElementWithLabel from './element-with-label'
 import Link from './link'
 
 export interface ExternalLink {
-  label: string;
-  links: {
-    url: string;
-    text: string;
-  }[];
+  label: string
+  links: Array<{
+    url: string
+    text: string
+  }>
 }
 
 export interface ExternalLinksProps {

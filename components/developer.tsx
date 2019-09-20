@@ -10,21 +10,19 @@ import MailToLink from './mailto-link'
 import ProjectList, { Project } from './project-list'
 import Technologies from './technologies'
 
-
-
 export interface DeveloperProps {
   data: {
-    name: string;
-    jobTitle: string;
-    phone?: string;
-    email: string;
-    skype?: string;
-    externalLinks: ExternalLink[];
-    projects: Project[];
-    qualification: string[];
-    technologies: string[];
-    additional: string;
-  };
+    name: string
+    jobTitle: string
+    phone?: string
+    email: string
+    skype?: string
+    externalLinks: ExternalLink[]
+    projects: Project[]
+    qualification: string[]
+    technologies: string[]
+    additional: string
+  }
 }
 
 const Developer = ({ data }: DeveloperProps) => (

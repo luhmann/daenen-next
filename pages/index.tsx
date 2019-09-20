@@ -3,8 +3,8 @@ import TwoCol from '../components/two-col'
 import Wrapper from '../components/wrapper'
 import { getRandomGradient } from '../lib/style-utils'
 
-import jfd from '../data/jfd.json'
 import hp from '../data/hp.json'
+import jfd from '../data/jfd.json'
 
 export interface IndexPageProps {
   gradient: string

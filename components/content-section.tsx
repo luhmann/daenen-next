@@ -17,5 +17,4 @@ const ContentSection = ({ children }: ContentSectionProps) => (
   </div>
 )
 
-
 export default ContentSection

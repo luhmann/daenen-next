@@ -1,8 +1,7 @@
-
 import { breakpoints, contentBox, sizes } from '../lib/style-utils'
 
-import Header from './header'
 import Footer from './footer'
+import Header from './header'
 
 export interface LayoutProps {
   children: React.ReactNode
