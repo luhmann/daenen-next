@@ -2,7 +2,11 @@ import PropTypes from 'prop-types'
 
 import { section } from '../lib/style-utils'
 
-const ContentSection = ({ children }) => (
+export interface ContentSectionProps {
+  children: React.ReactNode
+}
+
+const ContentSection = ({ children }: ContentSectionProps) => (
   <div className="content-section">
     {children}
     <style jsx>{`
@@ -13,8 +17,5 @@ const ContentSection = ({ children }) => (
   </div>
 )
 
-ContentSection.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default ContentSection

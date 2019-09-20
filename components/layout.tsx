@@ -1,11 +1,14 @@
-import PropTypes from 'prop-types'
 
 import { breakpoints, contentBox, sizes } from '../lib/style-utils'
 
 import Header from './header'
 import Footer from './footer'
 
-const Layout = ({ children }) => (
+export interface LayoutProps {
+  children: React.ReactNode
+}
+
+const Layout = ({ children }: LayoutProps) => (
   <div className="layout">
     <Header />
     <main className="content" data-e2e="content">
@@ -31,9 +34,5 @@ const Layout = ({ children }) => (
     `}</style>
   </div>
 )
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout

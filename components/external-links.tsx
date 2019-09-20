@@ -1,11 +1,21 @@
-import PropTypes from 'prop-types'
-
 import hash from '../lib/hash'
 
 import ElementWithLabel from './element-with-label'
 import Link from './link'
 
-const ExternalLinks = ({ config }) => (
+export interface ExternalLink {
+  label: string;
+  links: {
+    url: string;
+    text: string;
+  }[];
+}
+
+export interface ExternalLinksProps {
+  config: ExternalLink[]
+}
+
+const ExternalLinks = ({ config }: ExternalLinksProps) => (
   <div>
     {config.map(group => (
       <ElementWithLabel key={group.label} label={group.label}>
@@ -25,9 +35,5 @@ const ExternalLinks = ({ config }) => (
     ))}
   </div>
 )
-
-ExternalLinks.propTypes = {
-  config: PropTypes.array.isRequired,
-}
 
 export default ExternalLinks

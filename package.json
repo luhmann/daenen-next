@@ -9,8 +9,7 @@
     "export": "next build && next export",
     "start": "next start",
     "test": "testcafe chrome tests/e2e",
-    "test:ci":
-      "testcafe chrome,firefox tests/e2e --app 'http-server ./out -p 3000'"
+    "test:ci": "testcafe chrome,firefox tests/e2e --app 'http-server ./out -p 3000'"
   },
   "repository": {
     "type": "git",
@@ -31,6 +30,8 @@
     "recompose": "^0.30.0"
   },
   "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/recompose": "^0.30.7",
     "http-server": "^0.11.1",
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5",

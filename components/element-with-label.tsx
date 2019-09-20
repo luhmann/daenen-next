@@ -1,9 +1,12 @@
-import PropTypes from 'prop-types'
-
 import { hideIfNoChildren } from '../lib/hoc-helper'
 import { sizes } from '../lib/style-utils'
 
-const ElementWithLabel = hideIfNoChildren(({ children, label }) => (
+export interface ElementWithLabelProps {
+  label: string;
+  children: React.ReactNode | string
+}
+
+const ElementWithLabel = hideIfNoChildren(({ children, label }: ElementWithLabelProps) => (
   <div className="text">
     <span className="text--label">{label}:</span>
     {children}
@@ -15,10 +18,5 @@ const ElementWithLabel = hideIfNoChildren(({ children, label }) => (
     `}</style>
   </div>
 ))
-
-ElementWithLabel.propTypes = {
-  children: PropTypes.node,
-  label: PropTypes.string.isRequired,
-}
 
 export default ElementWithLabel

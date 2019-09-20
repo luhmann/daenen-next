@@ -5,12 +5,29 @@ import { breakpoints } from '../lib/style-utils'
 import ContentSection from './content-section'
 import DeveloperTitle from './developer-title'
 import ElementWithLabel from './element-with-label'
-import ExternalLinks from './external-links'
+import ExternalLinks, { ExternalLink } from './external-links'
 import MailToLink from './mailto-link'
-import ProjectList from './project-list'
+import ProjectList, { Project } from './project-list'
 import Technologies from './technologies'
 
-const Developer = ({ data }) => (
+
+
+export interface DeveloperProps {
+  data: {
+    name: string;
+    jobTitle: string;
+    phone?: string;
+    email: string;
+    skype?: string;
+    externalLinks: ExternalLink[];
+    projects: Project[];
+    qualification: string[];
+    technologies: string[];
+    additional: string;
+  };
+}
+
+const Developer = ({ data }: DeveloperProps) => (
   <section className="developer" data-e2e="developer">
     <DeveloperTitle name={data.name} jobTitle={data.jobTitle} />
 
@@ -59,9 +76,5 @@ const Developer = ({ data }) => (
     `}</style>
   </section>
 )
-
-Developer.propTypes = {
-  data: PropTypes.object.isRequired,
-}
 
 export default Developer

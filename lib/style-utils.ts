@@ -53,7 +53,7 @@ export const link = `
   text-decoration: none;
 `
 
-export const gradients = {
+export const gradients: Record<string, string> = {
   noonToDusk: 'linear-gradient(to right bottom, #bfe9ff, #ff6e7f)',
   visionsGrandeur: 'linear-gradient(to right bottom, #1CB5E0, #000046)',
   dusk: 'linear-gradient(to right bottom, #19547b, #ffd89b)',
@@ -65,5 +65,6 @@ export const gradients = {
 
 export const getRandomGradient = () => {
   const keys = Object.keys(gradients)
-  return gradients[keys[Math.floor(Math.random() * keys.length)]]
+  const randomKey: string = keys[Math.floor(Math.random() * keys.length)]
+  return gradients[randomKey]
 }

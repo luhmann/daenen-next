@@ -4,7 +4,12 @@ import { fonts, sizes } from '../lib/style-utils'
 
 import ContentSection from './content-section'
 
-const DeveloperTitle = ({ name, jobTitle }) => (
+export interface DeveloperTitleProps {
+  name: string,
+  jobTitle: string,
+}
+
+const DeveloperTitle = ({ name, jobTitle }: DeveloperTitleProps) => (
   <ContentSection>
     <h3 className="developer--name">{name}</h3>
     <div className="developer--job-title">{jobTitle}</div>
@@ -19,10 +24,5 @@ const DeveloperTitle = ({ name, jobTitle }) => (
     `}</style>
   </ContentSection>
 )
-
-DeveloperTitle.propTypes = {
-  name: PropTypes.string.isRequired,
-  jobTitle: PropTypes.string.isRequired,
-}
 
 export default DeveloperTitle

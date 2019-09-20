@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import { compose, withProps } from 'recompose'
 
 import hash from '../lib/hash'
@@ -8,7 +7,20 @@ import { colors, fonts, sizes } from '../lib/style-utils'
 import ElementWithLabel from './element-with-label'
 import Link from './link'
 
-const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }) => (
+export interface Project {
+  client: string;
+  description: string;
+  link?: string
+}
+
+export interface ProjectListProps {
+  buttonText: string;
+  isExpanded: boolean;
+  projects: Project[];
+  toggleExpanded: () => {}
+}
+
+const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }: ProjectListProps) => (
   <ElementWithLabel label="Clients and Projects">
     <ul>
       {projects.slice(0, isExpanded ? projects.length : 4).map(project => (
@@ -16,7 +28,7 @@ const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }) => (
           key={hash(`${project.client}-${project.description}`)}
           data-e2e="project"
         >
-          <Link url={project.link}>{project.client}</Link>&thinsp; ({
+          <Link url={project.link} target="_blank">{project.client}</Link>&thinsp; ({
             project.description
           })
         </li>
@@ -45,16 +57,9 @@ const ProjectList = ({ buttonText, isExpanded, projects, toggleExpanded }) => (
   </ElementWithLabel>
 )
 
-ProjectList.propTypes = {
-  buttonText: PropTypes.string.isRequired,
-  isExpanded: PropTypes.bool.isRequired,
-  toggleExpanded: PropTypes.func.isRequired,
-  projects: PropTypes.array.isRequired,
-}
-
-export default compose(
+export default compose<ProjectListProps, { projects: Project[]}>(
   toggleLength,
-  withProps(({ isExpanded }) => ({
+  withProps(({ isExpanded }: { isExpanded: boolean }) => ({
     buttonText: isExpanded ? 'Less Projects' : 'More Projects',
   }))
 )(ProjectList)

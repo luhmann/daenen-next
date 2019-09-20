@@ -5,7 +5,11 @@ import MailToLink from '../components/mailto-link'
 
 import { sizes, getRandomGradient } from '../lib/style-utils'
 
-const ImpressPage = ({ gradient }) => (
+export interface ImpressPageProps {
+  gradient: string;
+}
+
+const ImpressPage = ({ gradient }: ImpressPageProps) => (
   <Wrapper gradient={gradient}>
     <h1 className="impress-headline" data-e2e="impress">
       Impressum & Datenschutzhinweis

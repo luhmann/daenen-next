@@ -1,8 +1,10 @@
-import PropTypes from 'prop-types'
-
 import { breakpoints } from '../lib/style-utils'
 
-const TwoCol = ({ children }) => (
+export interface TwoColProps {
+  children: React.ReactNode
+}
+
+const TwoCol = ({ children }: TwoColProps) => (
   <section className="two-col">
     {children}
     <style jsx>{`
@@ -14,9 +16,5 @@ const TwoCol = ({ children }) => (
     `}</style>
   </section>
 )
-
-TwoCol.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default TwoCol

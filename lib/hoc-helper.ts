@@ -4,19 +4,20 @@ import {
   renderNothing,
   withHandlers,
   withState,
+  mapper,
 } from 'recompose'
 
-const hideIfNoData = hasNoData => branch(hasNoData, renderNothing)
+const hideIfNoData = (hasNoData: mapper<any, boolean>) => branch(hasNoData, renderNothing)
 
-const hasNoChildren = props => Boolean(props.children) === false
+const hasNoChildren = (props: { children: React.ReactNode}) => Boolean(props.children) === false
 
 const hideIfNoChildren = hideIfNoData(hasNoChildren)
 
 const toggleLength = compose(
   withState('isExpanded', 'toggleExp', false),
   withHandlers({
-    toggleExpanded: ({ toggleExp }) => () =>
-      toggleExp(isExpanded => !isExpanded),
+    toggleExpanded: ({ toggleExp }: any) => () =>
+      toggleExp((isExpanded: boolean) => !isExpanded),
   })
 )
 

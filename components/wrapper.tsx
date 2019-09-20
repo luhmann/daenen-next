@@ -1,11 +1,16 @@
 import Head from 'next/head'
-import PropTypes from 'prop-types'
 
 import { fonts, link, sizes } from '../lib/style-utils'
 
 import Layout from './layout'
 
-const wrapper = ({ title, children, gradient }) => (
+export interface WrapperProps {
+  children: React.ReactNode
+  gradient: string
+  title: string
+}
+
+const wrapper = ({ title, children, gradient }: WrapperProps) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -70,12 +75,6 @@ const wrapper = ({ title, children, gradient }) => (
     `}</style>
   </div>
 )
-
-wrapper.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.node.isRequired,
-  gradient: PropTypes.string.isRequired,
-}
 
 wrapper.defaultProps = {
   title: 'Softwarehaus Dänen4',
