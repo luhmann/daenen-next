@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 import { breakpoints } from '../lib/style-utils'
 
 import ContentSection from './content-section'

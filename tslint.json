@@ -1,9 +1,21 @@
 {
   "defaultSeverity": "error",
   "extends": ["tslint:recommended", "tslint-config-prettier"],
-  "jsRules": {},
+  "jsRules": {
+    "no-unused-variable": true
+  },
   "rules": {
-    "interface-name": false
+    "binary-expression-operand-order": true,
+    "deprecation": true,
+    "interface-name": false,
+    "no-duplicate-imports": true,
+    "no-null-keyword": true,
+    "no-sparse-arrays": true,
+    "no-unsafe-finally": true,
+    "no-unused-variable": [true, { "ignore-pattern": "^_" }],
+    "prefer-object-spread": true,
+    "prefer-readonly": true,
+    "prefer-template": true
   },
   "rulesDirectory": []
 }

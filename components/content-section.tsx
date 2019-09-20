@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 import { section } from '../lib/style-utils'
 
 export interface ContentSectionProps {
