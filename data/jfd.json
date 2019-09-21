@@ -33,44 +33,37 @@
   "projects": [
     {
       "client": "SIXT Leasing SE",
-      "description":
-        "Relaunch of a car-leasing platform using Angular 8, Angular Universal, Express, Typescript, RxJS, Java, Spring, Elasticsearch",
+      "description": "Relaunch of a car-leasing platform using Angular 8, Angular Universal, Express, Typescript, RxJS, Java, Spring, Elasticsearch",
       "link": "http://www.sixt-neuwagen.de"
     },
     {
       "client": "WPS Development/Wescale",
-      "description":
-        "Development for a Procurement-Platform using VueJs, Vuex, Node, K8S, Camunda, Java",
+      "description": "Development for a Procurement-Platform using VueJs, Vuex, Node, K8s, Camunda, Java",
       "link": "http://www.wescale.com"
     },
     {
       "client": "Zalando SE",
-      "description":
-        "Fullstack-Development for the Returns-Process with React, Redux, NodeJS, Express, Kotlin, PostgreSQL and Kubernetes",
+      "description": "Fullstack-Development for the Returns-Process with React, Redux, NodeJS, Express, Kotlin, PostgreSQL and Kubernetes",
       "link": "https://www.zalando.de"
     },
     {
       "client": "commercetools GmbH",
-      "description":
-        "Developing an API-first eCommerce-Platform using React, Redux, GraphQL, NodeJS",
+      "description": "Developing an API-first eCommerce-Platform using React, Redux, GraphQL, NodeJS",
       "link": "https://commercetools.com"
     },
     {
       "client": "ePost Development GmbH",
-      "description":
-        "Fullstack-Development for Mail-Portal using AngularJS/Angular2, Webpack, Scala & Play",
+      "description": "Fullstack-Development for Mail-Portal using AngularJS/Angular2, Webpack, Scala & Play",
       "link": "http://www.epost.de"
     },
     {
       "client": "MyVideo / ProSiebenSat1 Digital",
-      "description":
-        "Frontend & Mobile Development for the MyVideo online video platform",
+      "description": "Frontend & Mobile Development for the MyVideo online video platform",
       "link": "http://www.myvideo.de"
     },
     {
       "client": "Evinum",
-      "description":
-        "Development of an information retrieval and management system for wine data in Python",
+      "description": "Development of an information retrieval and management system for wine data in Python",
       "link": "http://www.evinum.de"
     },
     {
