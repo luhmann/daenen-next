@@ -33,7 +33,7 @@
   "projects": [
     {
       "client": "SIXT Leasing SE",
-      "description": "Relaunch of a car-leasing platform using Angular 8, Angular Universal, Express, Typescript, RxJS, Java, Spring, Elasticsearch",
+      "description": "Relaunch of a car-leasing platform using Angular 9, Angular Universal, Express, Typescript, RxJS, Java, Spring, Elasticsearch",
       "link": "http://www.sixt-neuwagen.de"
     },
     {
