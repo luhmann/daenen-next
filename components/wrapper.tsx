@@ -77,7 +77,7 @@ const wrapper = ({ title, children, gradient }: WrapperProps) => (
 )
 
 wrapper.defaultProps = {
-  title: 'Softwarehaus Dänen4',
+  title: 'Softwarehaus Dänen4 GmbH',
 }
 
 export default wrapper
