@@ -7,7 +7,7 @@
     "build": "next build",
     "dev": "next",
     "export": "next build && next export",
-    "start": "next start",
+    "start": "next",
     "test": "testcafe chrome tests/e2e",
     "test:ci": "testcafe chrome,firefox tests/e2e --app 'http-server ./out -p 3000'"
   },
