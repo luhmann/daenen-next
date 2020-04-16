@@ -15,9 +15,7 @@ const ImpressPage = ({ gradient }: ImpressPageProps) => (
     </h1>
 
     <ContentSection>
-      Softwarehaus Dänen4
-      <br />
-      Petersen, Dietrich (GbR)
+      Softwarehaus Dänen4 GmbH
       <br />
       Sonntagstraße 4<br />
       10245 Berlin
