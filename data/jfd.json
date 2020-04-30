@@ -37,7 +37,7 @@
       "link": "http://www.sixt-neuwagen.de"
     },
     {
-      "client": "WPS Development/Wescale",
+      "client": "WPS Management GmbH/wescale",
       "description": "Development for a Procurement-Platform using VueJs, Vuex, Node, K8s, Camunda, Java",
       "link": "http://www.wescale.com"
     },
