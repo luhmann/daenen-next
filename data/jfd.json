@@ -33,12 +33,12 @@
   "projects": [
     {
       "client": "SIXT Leasing SE",
-      "description": "Relaunch of a car-leasing platform using Angular 9, Angular Universal, Express, Typescript, RxJS, Java, Spring, Elasticsearch",
+      "description": "Relaunch of a car-leasing platform using Angular 9, Angular Universal, Angular Material, Express, NodeJs, Typescript, RxJS, AWS Lambda, Java, Spring, Elasticsearch",
       "link": "http://www.sixt-neuwagen.de"
     },
     {
       "client": "WPS Management GmbH/wescale",
-      "description": "Development for a Procurement-Platform using Vue.js, Vuex, Vue Router Node, K8s, Camunda, Java",
+      "description": "Development for a Procurement-Platform using Vue.js, Vuex, Vue Router, Node, K8s, Camunda, Java",
       "link": "http://www.wescale.com"
     },
     {
