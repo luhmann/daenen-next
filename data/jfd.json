@@ -38,7 +38,7 @@
     },
     {
       "client": "WPS Management GmbH/wescale",
-      "description": "Development for a Procurement-Platform using VueJs, Vuex, Node, K8s, Camunda, Java",
+      "description": "Development for a Procurement-Platform using Vue.js, Vuex, Vue Router Node, K8s, Camunda, Java",
       "link": "http://www.wescale.com"
     },
     {
