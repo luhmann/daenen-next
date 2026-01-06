@@ -17,7 +17,7 @@ export interface ExternalLinksProps {
 
 const ExternalLinks = ({ config }: ExternalLinksProps) => (
   <div>
-    {config.map(group => (
+    {config.map((group) => (
       <ElementWithLabel key={group.label} label={group.label}>
         {group.links.map((link, index) => (
           <span key={hash(`${link.url}-${index}`)} className="external-link">

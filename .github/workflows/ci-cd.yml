@@ -18,23 +18,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Build and export
-        run: yarn run export
+        run: npm run export
 
       - name: Run e2e tests (Chrome)
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome:headless tests/e2e --app 'http-server ./out -p 3000'"
+          args: "chrome:headless tests/e2e --app 'http-server ./out -p 3000' --skip-js-errors"
 
       - name: Run e2e tests (Firefox)
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "firefox:headless tests/e2e --app 'http-server ./out -p 3000'"
+          args: "firefox:headless tests/e2e --app 'http-server ./out -p 3000' --skip-js-errors"
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

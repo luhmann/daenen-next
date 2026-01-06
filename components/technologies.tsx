@@ -9,7 +9,7 @@ export interface TechnologiesProps {
 const Technologies = ({ technologies }: TechnologiesProps) => (
   <ElementWithLabel label="Technologies">
     <ul>
-      {technologies.map(tech => (
+      {technologies.map((tech) => (
         <li key={hash(`${tech}`)}>{tech}</li>
       ))}
     </ul>

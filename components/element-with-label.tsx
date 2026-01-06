@@ -1,13 +1,14 @@
-import { hideIfNoChildren } from '../lib/hoc-helper'
 import { sizes } from '../lib/style-utils'
 
 export interface ElementWithLabelProps {
   label: string
-  children: React.ReactNode | string
+  children?: React.ReactNode
 }
 
-const ElementWithLabel = hideIfNoChildren(
-  ({ children, label }: ElementWithLabelProps) => (
+const ElementWithLabel = ({ children, label }: ElementWithLabelProps) => {
+  if (!children) return null
+
+  return (
     <div className="text">
       <span className="text--label">{label}:</span>
       {children}
@@ -19,6 +20,6 @@ const ElementWithLabel = hideIfNoChildren(
       `}</style>
     </div>
   )
-)
+}
 
 export default ElementWithLabel

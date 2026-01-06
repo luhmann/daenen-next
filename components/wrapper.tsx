@@ -7,10 +7,14 @@ import Layout from './layout'
 export interface WrapperProps {
   children: React.ReactNode
   gradient: string
-  title: string
+  title?: string
 }
 
-const wrapper = ({ title, children, gradient }: WrapperProps) => (
+const wrapper = ({
+  title = 'Softwarehaus Dänen4 GmbH',
+  children,
+  gradient,
+}: WrapperProps) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -75,9 +79,5 @@ const wrapper = ({ title, children, gradient }: WrapperProps) => (
     `}</style>
   </div>
 )
-
-wrapper.defaultProps = {
-  title: 'Softwarehaus Dänen4 GmbH',
-}
 
 export default wrapper

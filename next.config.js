@@ -1,5 +1,7 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
-  exportTrailingSlash: true,
+  output: 'export',
+  trailingSlash: true,
   exportPathMap() {
     return {
       '/': { page: '/' },
