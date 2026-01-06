@@ -76,8 +76,10 @@ const ImpressPage = ({ gradient }: ImpressPageProps) => (
   </Wrapper>
 )
 
-ImpressPage.getInitialProps = () => ({
-  gradient: getRandomGradient(),
+export const getStaticProps = () => ({
+  props: {
+    gradient: getRandomGradient(),
+  },
 })
 
 export default ImpressPage

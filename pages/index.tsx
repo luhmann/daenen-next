@@ -20,8 +20,10 @@ const IndexPage = ({ gradient }: IndexPageProps) => (
   </section>
 )
 
-IndexPage.getInitialProps = () => ({
-  gradient: getRandomGradient(),
+export const getStaticProps = () => ({
+  props: {
+    gradient: getRandomGradient(),
+  },
 })
 
 export default IndexPage
