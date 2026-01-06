@@ -10,10 +10,6 @@
       "label": "Programming",
       "links": [
         {
-          "url": "http://henningpetersen.com",
-          "text": "Blog"
-        },
-        {
           "url": "http://stackoverflow.com/users/7034/henning",
           "text": "Stack Overflow"
         }
@@ -39,74 +35,62 @@
   "projects": [
     {
       "client": "Deutsche Bank",
-      "description":
-        "Development of backend systems for a white-label automatic investment solution",
+      "description": "Development of backend systems for a white-label automatic investment solution",
       "link": "https://www.deutscheinvest.lu"
     },
     {
       "client": "ImmobilienScout24",
-      "description":
-        "Developing data-driven products using Scala, Play and Elastic",
+      "description": "Developing data-driven products using Scala, Play and Elastic",
       "link": "http://www.immobilienscout24.de/"
     },
     {
       "client": "MyVideo Broadband S.R.L.",
-      "description":
-        "Development of backend systems for the MyVideo online video platform",
+      "description": "Development of backend systems for the MyVideo online video platform",
       "link": "http://www.myvideo.de"
     },
     {
       "client": "Deutsche Telekom AG",
-      "description":
-        "Development of back-end systems for a smart home solution",
+      "description": "Development of back-end systems for a smart home solution",
       "link": "https://www.qivicon.com/"
     },
     {
       "client": "Bisnode Informatics Germany",
-      "description":
-        "Architecture and development of a system to monitor and provide change notifications for company data",
+      "description": "Architecture and development of a system to monitor and provide change notifications for company data",
       "link": "http://www.bisnode.com/"
     },
     {
       "client": "Bisnode Informatics Germany",
-      "description":
-        "Extension of an administration application for customer data and permissions for D&B Germany",
+      "description": "Extension of an administration application for customer data and permissions for D&B Germany",
       "link": "http://www.bisnode.com/"
     },
     {
       "client": "Bisnode Informatics Germany",
-      "description":
-        "Extension and CI-compliant adaptation of a company address shop for D&B Germany",
+      "description": "Extension and CI-compliant adaptation of a company address shop for D&B Germany",
       "link": "http://www.bisnode.com/"
     },
     {
       "client": "Ändrä AG",
-      "description":
-        "Development of the translation management system Ontram+ and related components.",
+      "description": "Development of the translation management system Ontram+ and related components.",
       "link": "http://www.ontram.de/"
     },
     {
       "client": "Bisnode Informatics Germany",
-      "description":
-        "Architecture and lead development of a process automation system to connect international fulfillment systems and teams.",
+      "description": "Architecture and lead development of a process automation system to connect international fulfillment systems and teams.",
       "link": "http://www.bisnode.com/"
     },
     {
       "client": "Bisnode Informatics Germany",
-      "description":
-        "Development Lead for a B2B Marketing Address Shop for D&B Germany",
+      "description": "Development Lead for a B2B Marketing Address Shop for D&B Germany",
       "link": "http://www.bisnode.com/"
     },
     {
       "client": "Deutsche Post IT Solutions",
-      "description":
-        "Interaction Design and Web Development of a Web-based Business System Prototype for Mail Hubs",
+      "description": "Interaction Design and Web Development of a Web-based Business System Prototype for Mail Hubs",
       "link": "http://www.dp-itsolutions.de/"
     },
     {
       "client": "Maris Consulting GmbH",
-      "description":
-        "Consulting & Development of Teamsite-based Systems for Bayer Schering Pharma AG",
+      "description": "Consulting & Development of Teamsite-based Systems for Bayer Schering Pharma AG",
       "link": "http://www.maris-consulting.com/"
     },
     {
@@ -125,8 +109,7 @@
     },
     {
       "client": "Arvato Systems GmbH",
-      "description":
-        "Consulting & Development for Sony BMG Music Entertainment",
+      "description": "Consulting & Development for Sony BMG Music Entertainment",
       "link": "http://www.arvato-systems.de/"
     }
   ],
