@@ -32,6 +32,11 @@
   ],
   "projects": [
     {
+      "client": "Universal Music / Deutsche Grammophon",
+      "description": "Green-field development of an audio-/vod-/live-streaming platform using Elixir, Phoenix, Ecto, Oban, Next.JS, AWS, Typescript, Node",
+      "link": "http://www.stage-plus.com"
+    },
+    {
       "client": "SIXT Leasing SE",
       "description": "Relaunch of a car-leasing platform using Angular 9, Angular Universal, Angular Material, Express, Node, Typescript, RxJS, AWS Lambda, Java, Spring, Elasticsearch",
       "link": "http://www.sixt-neuwagen.de"
@@ -102,21 +107,23 @@
     }
   ],
   "technologies": [
-    "JavaScript, ES6/ES2015++, Typescript, Babel",
-    "Functional Reactive Programming: ReasonML, Elm, ClojureScript, RxJS, Scala.Js",
+    "Typescript, JavaScript, Bun, Deno",
+    "Functional Reactive Programming: ReasonML, Elm, ClojureScript, RxJS",
     "GraphQL, Apollo, Relay",
-    "React, Redux, React-Router, Recompose, Reselect, NextJs, Gatsby, ImmutableJS",
-    "NodeJS, Express, Hapi, Koa",
+    "Next.Js, React, Redux, React-Router, Gatsby",
+    "NodeJS, Express, Hapi, Fastify",
+    "Svelte, Sveltekit & Ecosystem",
     "Angular",
     "Vue, Vuex, Vue-Router",
     "Webpack, Rollup, Parcel",
-    "Styles: Latest CSS, CSS-in-JS, Styled Components, CSS Modules, BEM, PostCSS, SASS",
-    "Testing: Jest, Cypress, Testcafe",
-    "HTML5, WAI-ARIA",
+    "Elixir, Phoenix, Ecto, Oban, Absinthe",
+    "Kotlin, Java",
+    "AWS Lambda, Step Functions & ecosystem",
+    "Styles: Latest CSS, Tailwind, CSS-in-JS, Styled Components, CSS Modules, BEM, PostCSS, SASS",
+    "Testing: Playwright, Vitest, Jest, Cypress, Testcafe",
     "CMS: Wordpress, Drupal, Ghost, Contentful",
     "Solr, Lucene, Elasticsearch",
     "Scala/Play Framework",
-    "Kotlin",
     "PHP, Laravel, Symfony, Python,"
   ],
   "additional": "Please ask for my profile for detailed information"
