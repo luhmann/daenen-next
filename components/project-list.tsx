@@ -18,7 +18,7 @@ export interface ProjectListProps {
 
 const ProjectList = ({ projects }: ProjectListProps) => {
   const [isExpanded, setIsExpanded] = useState(false)
-  const buttonText = isExpanded ? 'Less Projects' : 'More Projects'
+  const buttonText = isExpanded ? 'Fewer Projects' : 'More Projects'
 
   const toggleExpanded = () => setIsExpanded((prev) => !prev)
 

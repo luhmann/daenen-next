@@ -2,40 +2,61 @@
   "id": "hp",
   "name": "Henning Petersen",
   "jobTitle": "Software Design & Development",
-  "phone": "+49 (0)179 1461388",
   "email": "hp@daenen4.de",
   "externalLinks": [
     {
-      "label": "Programming",
-      "links": [
-        {
-          "url": "http://stackoverflow.com/users/7034/henning",
-          "text": "Stack Overflow"
-        }
-      ]
-    },
-    {
       "label": "Social Networks",
       "links": [
+        {
+          "url": "https://www.linkedin.com/in/henning-petersen-603394242/",
+          "text": "LinkedIn"
+        },
         {
           "url": "http://www.xing.com/profile/Henning_Petersen",
           "text": "Xing"
         }
       ]
+    },
+    {
+      "label": "Programming",
+      "links": [
+        {
+          "url": "https://github.com/henningp",
+          "text": "GitHub"
+        },
+        {
+          "url": "http://stackoverflow.com/users/7034/henning",
+          "text": "Stack Overflow"
+        }
+      ]
     }
   ],
   "qualification": [
-    "Software Architecture & Engineering",
-    "Web-based Systems",
-    "IT Consulting",
-    "Conceptual & Interaction Design",
-    "Paper Prototyping"
+    "Full-stack Development with a Backend Focus",
+    "Data Engineering",
+    "Automated Testing",
+    "Cloud Infrastructure & CI/CD"
   ],
   "projects": [
     {
-      "client": "Deutsche Bank",
-      "description": "Development of backend systems for a white-label automatic investment solution",
-      "link": "https://www.deutscheinvest.lu"
+      "client": "Zalando",
+      "description": "Implementing multi-tenancy in buying systems",
+      "link": "https://www.zalando.de"
+    },
+    {
+      "client": "Kleinanzeigen",
+      "description": "Retrieval of relevant product ads (first-party PLA) using search and machine learning; Backend development for the Privacy and Data Enablement teams at (eBay) Kleinanzeigen",
+      "link": "https://www.kleinanzeigen.de"
+    },
+    {
+      "client": "Deutsche Post IT Services",
+      "description": "Development of a system to assess mass mailings for automated mail processing using computer vision and AI; Migration of a fleet of microservices from private cloud to Azure",
+      "link": "https://www.deutschepost.de"
+    },
+    {
+      "client": "DWS / Deutsche Bank",
+      "description": "Backend development for the DWS Investment App, a white-label robo-advisor and institutional investment solutions, including cloud migration to Azure",
+      "link": "https://www.dws.com"
     },
     {
       "client": "ImmobilienScout24",
@@ -54,33 +75,13 @@
     },
     {
       "client": "Bisnode Informatics Germany",
-      "description": "Architecture and development of a system to monitor and provide change notifications for company data",
-      "link": "http://www.bisnode.com/"
-    },
-    {
-      "client": "Bisnode Informatics Germany",
-      "description": "Extension of an administration application for customer data and permissions for D&B Germany",
-      "link": "http://www.bisnode.com/"
-    },
-    {
-      "client": "Bisnode Informatics Germany",
-      "description": "Extension and CI-compliant adaptation of a company address shop for D&B Germany",
+      "description": "Architecture and development of a system to monitor and provide change notifications for company data; Extension of an administration application for customer data and permissions for D&B Germany; Extension and CI-compliant adaptation of a company address shop for D&B Germany; Architecture and lead development of a process automation system to connect international fulfillment systems and teams; Development Lead for a B2B Marketing Address Shop for D&B Germany",
       "link": "http://www.bisnode.com/"
     },
     {
       "client": "Ändrä AG",
       "description": "Development of the translation management system Ontram+ and related components.",
       "link": "http://www.ontram.de/"
-    },
-    {
-      "client": "Bisnode Informatics Germany",
-      "description": "Architecture and lead development of a process automation system to connect international fulfillment systems and teams.",
-      "link": "http://www.bisnode.com/"
-    },
-    {
-      "client": "Bisnode Informatics Germany",
-      "description": "Development Lead for a B2B Marketing Address Shop for D&B Germany",
-      "link": "http://www.bisnode.com/"
     },
     {
       "client": "Deutsche Post IT Solutions",
@@ -103,29 +104,22 @@
     },
     {
       "client": "Arvato Systems GmbH",
-      "description": "Consulting & Development for MediaFed",
-      "link": "http://www.arvato-systems.de/"
-    },
-    {
-      "client": "Arvato Systems GmbH",
-      "description": "Consulting & Development for Sony BMG Music Entertainment",
+      "description": "Consulting & Development for MediaFed; Consulting & Development for Sony BMG Music Entertainment",
       "link": "http://www.arvato-systems.de/"
     }
   ],
   "technologies": [
-    "Java",
-    "Scala",
-    "Groovy",
-    "J2EE",
-    "ORM (JPA 2, JTA, Hibernate)",
-    "Web Services (SOAP, REST, Contract-First, WADL, WSDL, JAX-RS, Spring WS, JAX-WS, JAXB, Apache CXF, Restlet API, Spring WS, SoapUI)",
-    "MVC/Web Application Frameworks (Struts 1, Tapestry 5, Spring MVC, JSF, Seam)",
-    "IOC/DI (Spring)",
-    "Web/SoC (HTML, CSS, JSP, XSLT, Velocity, Javascript, AJAX, jQuery, Prototype, Scriptaculous, SASS, Less)",
-    "DBMS & Migrations (MySQL, PostgreSQL, MS SQL, H2 DB, HSQLDB, Redis, Riak, CouchDb, Liquibase, Flyway, Hibernate Search, Lucene, Solr)",
-    "Testing (JUnit, Spock Test, Mockito, Powermock, Spring Test, DbUnit)",
-    "BPM/Workflows (jBPM, Activity, Apache Camel)",
-    "Application Server (Jetty, Tomcat)"
+    "Languages (Kotlin, Java, Scala, Groovy)",
+    "Backend & APIs (Spring Boot, Spring MVC, REST, OpenAPI 3.0, microservices)",
+    "Persistence & Databases (JPA/Hibernate, JDBI, PostgreSQL, MySQL, Oracle, Liquibase, Hazelcast)",
+    "Messaging & Events (Apache Kafka, Avro, Nakadi, ActiveMQ)",
+    "Search, Machine Learning & Computer Vision (Elasticsearch, ONNX, OpenCV, Tesseract)",
+    "Data Platforms & Pipelines (Databricks, dbt, Apache Airflow)",
+    "Cloud & Containers (AWS, Azure, Docker, Kubernetes/AKS, Helm, Azure Spring Apps, Azure Managed SQL, Key Vault, App Configuration)",
+    "Testing (JUnit, Kotest, Spock)",
+    "Development & CI/CD (IntelliJ IDEA, GitHub, GitHub Actions, Maven, Jenkins, TeamCity)",
+    "Observability (Dash0, Splunk, Grafana)",
+    "Document Processing (Apache PDFBox, Apache POI, JXLS)"
   ],
-  "additional": "Please ask for my profile for detailed information"
+  "additional": "Please ask for my profile for detailed information."
 }

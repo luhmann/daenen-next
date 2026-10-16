@@ -23,14 +23,26 @@ test('Contains 8 project items (standard in collapsed state)', async t => {
   await t.expect(homePage.projectItem.count).eql(8)
 })
 
-test('Expanding project list works', async t => {
+test('Expanding and collapsing project lists works', async t => {
   await t
     .click(homePage.moreButton.nth(0))
     .expect(homePage.projectItem.count)
     .gt(8, 'Page still contains only 8 projects - tried to expand jfd')
+    .expect(homePage.moreButton.nth(0).innerText)
+    .eql('Fewer Projects')
     .click(homePage.moreButton.nth(1))
     .expect(homePage.projectItem.count)
     .gt(8, 'Page still contains only 8 projects - tried to expand henning')
+    .expect(homePage.moreButton.nth(1).innerText)
+    .eql('Fewer Projects')
+    .click(homePage.moreButton.nth(0))
+    .click(homePage.moreButton.nth(1))
+    .expect(homePage.projectItem.count)
+    .eql(8)
+    .expect(homePage.moreButton.nth(0).innerText)
+    .eql('More Projects')
+    .expect(homePage.moreButton.nth(1).innerText)
+    .eql('More Projects')
 })
 
 test('Link to Impress-page works', async t => {
