@@ -12,8 +12,8 @@ export default () => (
           src="/static/logo.svg"
           width="364"
           height="114"
-          title="Softwarehaus Dänen4 GmbH | Sonntagstr. 4 | 10245 Berlin"
-          alt="Softwarehaus Dänen4 GmbH | Sonntagstr. 4 | 10245 Berlin"
+          title="Softwarehaus Dänen4 GmbH — Home"
+          alt="Softwarehaus Dänen4 GmbH — Home"
         />
       </a>
     </Link>

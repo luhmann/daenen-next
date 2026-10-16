@@ -62,3 +62,10 @@ typings/
 
 # Static Export-Folder
 out
+
+# IDE settings
+.idea/
+.vscode/
+
+# macOS metadata
+.DS_Store
